@@ -24,12 +24,53 @@ display: inline-block;
 display: flex;
 justify-content: space-between;
 }
+
 #imagen {
-  height: calc(100vh-64px);
+  height: calc(100vh - 64px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
 }
-#imagen img{
+#imagen .imagenprincipal{
  width: 100%;
  height: 100%;
  object-fit: cover;
  object-position: bottom;
+}
+
+
+#Centrado {
+  position: absolute;
+}
+#Centrado img{
+  width: 173px;
+  height: 80px;
+}
+.colortexto{
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+}
+#Centrado input{
+  padding-left: 10px;
+  font-style: italic;
+  font-weight: lighter;
+}
+#CosaRedonda {
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  bottom: 24px;
+  right: 24px;
 }
